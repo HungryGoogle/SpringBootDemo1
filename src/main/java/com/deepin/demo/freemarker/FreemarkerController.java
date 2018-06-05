@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Map;
 
+//http://localhost:8080/freemarker/hello
+
 @Controller
 @RequestMapping("freemarker")
 public class FreemarkerController {
