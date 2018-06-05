@@ -20,7 +20,7 @@ public class FastJsonController {
         User user = new User();
 
         user.setId(1);
-        user.setUsername("李文庆");
+        user.setUsername("明天是否更好");
         user.setPassword("jack123");
         user.setBirthday(new Date());
 
