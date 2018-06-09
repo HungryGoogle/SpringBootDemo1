@@ -28,10 +28,11 @@ public class WebSocketApp {
 	@Autowired
 	private SimpMessagingTemplate messagingTemplate;
 
-	@GetMapping("/")
+	// http://localhost:8080/websocket
+	@GetMapping("/websocket")
 	public String index() {
-		LogUtil.info("index");
-		return "index";
+		LogUtil.info("websocket request, return html");
+		return "websocket";
 	}
 
 	@MessageMapping("/send")
