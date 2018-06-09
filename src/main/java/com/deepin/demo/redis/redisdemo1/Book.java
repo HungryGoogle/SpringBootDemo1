@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Book implements Serializable {
-    private static final long serialVersionUID = 2629983876059197650L;
+    private transient static final long serialVersionUID = 2629983876059197650L;
 
     private String id;
 

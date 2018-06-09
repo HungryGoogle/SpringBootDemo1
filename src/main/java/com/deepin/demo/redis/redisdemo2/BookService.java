@@ -137,7 +137,6 @@ public class BookService extends AbstractService {
 	@CacheEvict(cacheNames="book1", allEntries=true)
 	public void clearBook1All(){
 		logger.info("clearAll");
-		repositoryBook.clear();
 	}
 	/**
 	 * 对符合key条件的记录从缓存中book1移除
