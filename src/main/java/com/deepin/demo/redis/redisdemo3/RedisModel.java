@@ -1,4 +1,4 @@
-package com.deepin.demo.redis;
+package com.deepin.demo.redis.redisdemo3;
 
 import java.io.Serializable;
 
