@@ -1,8 +1,10 @@
-package com.deepin.demo.jsondata;
+package com.deepin.demo.filter;
 
 
 import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.util.Enumeration;
 
 public class TimeFilter implements Filter {
 
@@ -14,6 +16,14 @@ public class TimeFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain)
             throws IOException, ServletException {
+
+        HttpServletRequest req = (HttpServletRequest) request;
+        Enumeration<String> paraNames = request.getParameterNames();
+        for (Enumeration e = paraNames; e.hasMoreElements(); ) {
+            String thisName = e.nextElement().toString();
+            String thisValue = request.getParameter(thisName);
+            System.out.println(thisName + " -------------- " + thisValue);
+        }
 
         long start = System.currentTimeMillis();
 
