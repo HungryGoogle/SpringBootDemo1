@@ -1,5 +1,6 @@
-package com.deepin.demo.redisdemo3;
+package com.deepin.demo.redis.redisdemo3;
 
+import com.deepin.demo.redis.RedisModel;
 import org.springframework.stereotype.Service;
 
 /**

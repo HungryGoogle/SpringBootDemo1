@@ -1,4 +1,4 @@
-package com.deepin.demo.redisdemo2;
+package com.deepin.demo.redis.redisdemo2;
 
 /**
  * spring 通过 CacheRedisConfig 配置redis

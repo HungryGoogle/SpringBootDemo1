@@ -1,9 +1,7 @@
-package com.deepin.demo.redisdemo2;
+package com.deepin.demo.redis.redisdemo5_lee;
 
 
-import java.util.Calendar;
-
-import com.deepin.demo.redisdemo2.support.BookQry;
+import com.deepin.demo.redis.redisdemo2.support.BookQry;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +14,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class CacheTest {
     @Autowired
     private BookService bookService;
-
-    @Autowired
-    private BookService2 bookService2;
 
     @Test
     public void queryBookCacheable(){

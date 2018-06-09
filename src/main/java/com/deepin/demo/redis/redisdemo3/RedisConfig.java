@@ -1,4 +1,4 @@
-package com.deepin.demo.redisdemo3;
+package com.deepin.demo.redis.redisdemo3;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

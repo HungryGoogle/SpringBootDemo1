@@ -1,4 +1,4 @@
-package com.deepin.demo.redisdemo2;
+package com.deepin.demo.redis.redisdemo2;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

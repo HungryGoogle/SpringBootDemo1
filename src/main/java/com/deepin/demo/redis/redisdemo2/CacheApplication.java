@@ -1,4 +1,4 @@
-package com.deepin.demo.redisdemo2;
+package com.deepin.demo.redis.redisdemo2;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

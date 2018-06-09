@@ -1,6 +1,6 @@
-package com.deepin.demo.redisdemo2;
+package com.deepin.demo.redis.redisdemo2;
 
-import com.deepin.demo.redisdemo2.support.Book;
+import com.deepin.demo.redis.redisdemo2.support.Book;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cache.annotation.CacheConfig;

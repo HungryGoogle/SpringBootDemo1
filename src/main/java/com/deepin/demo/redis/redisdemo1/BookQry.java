@@ -1,4 +1,4 @@
-package com.deepin.demo.redisdemo1;
+package com.deepin.demo.redis.redisdemo1;
 
 public class BookQry {
     private String id;

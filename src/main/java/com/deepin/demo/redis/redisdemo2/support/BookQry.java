@@ -1,4 +1,4 @@
-package com.deepin.demo.redisdemo2.support;
+package com.deepin.demo.redis.redisdemo2.support;
 
 import com.alibaba.fastjson.JSON;
 

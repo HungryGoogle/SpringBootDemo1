@@ -1,6 +1,6 @@
-package com.deepin.demo.redisdemo2;
+package com.deepin.demo.redis.redisdemo2;
 
-import com.deepin.demo.redisdemo2.support.Book;
+import com.deepin.demo.redis.redisdemo2.support.Book;
 
 import java.util.Date;
 import java.util.HashMap;
