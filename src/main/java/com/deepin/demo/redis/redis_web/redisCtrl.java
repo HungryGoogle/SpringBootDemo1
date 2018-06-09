@@ -18,7 +18,7 @@ public class redisCtrl {
     @Autowired
     private BookService bookService;
 
-
+    //    http://localhost:8080/redis/test
     @RequestMapping("test")
     @ResponseBody
     public User test() {
