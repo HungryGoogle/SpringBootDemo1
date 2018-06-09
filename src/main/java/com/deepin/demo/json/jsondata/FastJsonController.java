@@ -1,4 +1,4 @@
-package com.deepin.demo.jsondata;
+package com.deepin.demo.json.jsondata;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

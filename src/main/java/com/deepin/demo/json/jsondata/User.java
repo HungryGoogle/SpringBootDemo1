@@ -1,4 +1,4 @@
-package com.deepin.demo.jsondata;
+package com.deepin.demo.json.jsondata;
 
 import com.alibaba.fastjson.annotation.JSONField;
 

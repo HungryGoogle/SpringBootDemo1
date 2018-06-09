@@ -1,4 +1,4 @@
-package com.deepin.demo.jsondatademo2;
+package com.deepin.demo.json.jsondatademo2;
 
 import java.util.Date;
 

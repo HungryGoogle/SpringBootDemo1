@@ -1,6 +1,6 @@
 package com.deepin.demo.redis.redis_web;
 
-import com.deepin.demo.jsondata.User;
+import com.deepin.demo.json.jsondata.User;
 import com.deepin.demo.redis.redisdemo2.BookService;
 import com.deepin.demo.redis.redisdemo2.support.Book;
 import com.deepin.demo.util.log.LogUtil;
