@@ -1,6 +1,6 @@
 package com.deepin.demo.redis.redisdemo3;
 
-import com.deepin.demo.util.log.logUtil;
+import com.deepin.demo.util.log.LogUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +24,7 @@ public class TestController {
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     @ResponseBody
     public void test() {
-        logUtil.info("add start.....");
+        LogUtil.info("add start.....");
         RedisModel m = new RedisModel();
         m.setName("张三");
         m.setTel("1111");
@@ -46,7 +46,7 @@ public class TestController {
         m3.setRedisKey("zhangsanKey03");
         service.put(m3.getRedisKey(), m3, -1);
 
-        logUtil.info("add success end...");
+        LogUtil.info("add success end...");
     }
 
     //查询所有对象
@@ -88,7 +88,7 @@ public class TestController {
         RedisModel m = new RedisModel();
         m.setRedisKey("zhangsanKey01");
         boolean flag = service.isKeyExists(m.getRedisKey());
-        logUtil.info("zhangsanKey01 是否存在: "+flag);
+        LogUtil.info("zhangsanKey01 是否存在: "+flag);
     }
 
     //查询当前缓存的数量

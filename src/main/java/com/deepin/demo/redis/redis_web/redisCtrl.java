@@ -3,8 +3,7 @@ package com.deepin.demo.redis.redis_web;
 import com.deepin.demo.jsondata.User;
 import com.deepin.demo.redis.redisdemo2.BookService;
 import com.deepin.demo.redis.redisdemo2.support.Book;
-import com.deepin.demo.util.log.logUtil;
-import org.junit.Test;
+import com.deepin.demo.util.log.LogUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,7 +38,7 @@ public class redisCtrl {
     public Book queryBookCacheable(){
         if(bookService != null) {
             Book book = bookService.queryBookCacheable("1");
-            logUtil.info("leeTest------> querybook : " + book);
+            LogUtil.info("leeTest------> querybook : " + book);
             return book;
         }
         return null;
@@ -57,7 +56,7 @@ public class redisCtrl {
         String name = "name_lee";
 
         Book book = bookService.queryBookCacheable("1");
-        logUtil.info("leeTest------> after update book : " + book);
+        LogUtil.info("leeTest------> after update book : " + book);
         return book;
     }
 
