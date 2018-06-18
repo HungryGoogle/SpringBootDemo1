@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.hellospringbootdemo0;
 
 public class JsonResult {
 

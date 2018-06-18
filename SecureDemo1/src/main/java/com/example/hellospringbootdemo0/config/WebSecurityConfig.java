@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.example.hellospringbootdemo0.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

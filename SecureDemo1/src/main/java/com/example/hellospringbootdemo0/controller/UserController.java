@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.hellospringbootdemo0.controller;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
