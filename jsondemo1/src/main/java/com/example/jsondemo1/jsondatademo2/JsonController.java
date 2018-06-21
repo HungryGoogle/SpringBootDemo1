@@ -13,6 +13,7 @@ public class JsonController {
 
     @RequestMapping("/getJson")
     public User getJson() {
+        System.out.println("getJson ... ");
         User demo = new User();
         demo.setId(1);
 
@@ -23,6 +24,8 @@ public class JsonController {
 
     @RequestMapping("/getJsonList")
     public List<User> getJsonList() {
+        System.out.println("getJsonList ... ");
+
         List list = new ArrayList();
 
         User user = new User();
