@@ -14,4 +14,10 @@ public class VueControl {
         return "index";
     }
 
+    @GetMapping("/vuedemo2")
+    public String vuedemo2(){
+        System.out.println("vue demo 2");
+        return "vue_demo_2";
+    }
+
 }
