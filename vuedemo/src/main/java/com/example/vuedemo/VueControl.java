@@ -20,4 +20,6 @@ public class VueControl {
         return "vue_demo_2";
     }
 
+//    vue分离
+//    https://www.cnblogs.com/nele/p/7858581.html
 }
