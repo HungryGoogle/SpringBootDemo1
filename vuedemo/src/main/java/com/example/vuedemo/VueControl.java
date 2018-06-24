@@ -14,6 +14,12 @@ public class VueControl {
         return "index";
     }
 
+    @GetMapping("/vue/httpdemo")
+    public String httpdemo(){
+        System.out.println("vue demo");
+        return "vue_http_demo_3";
+    }
+
     @GetMapping("/vuedemo2")
     public String vuedemo2(){
         System.out.println("vue demo 2");
@@ -22,6 +28,7 @@ public class VueControl {
 
 //    vue分离
 //    https://www.cnblogs.com/nele/p/7858581.html
+//      --- 代码编译不过
 
 //    分离2
 //    https://my.oschina.net/u/3491123/blog/1593600
@@ -29,4 +36,8 @@ public class VueControl {
 
     // 分离成功
 //    https://my.oschina.net/u/3491123/blog/1593600
+
+    // vue http请求 ，单html 测试 ok
+    // https://www.cnblogs.com/alinaxia/p/6359074.html
+    // code https://github.com/keepfool/vue-tutorials --> /03.Ajax/vue-resource
 }
