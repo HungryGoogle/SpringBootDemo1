@@ -30,7 +30,7 @@
   <!-- 更新user -->
   <!--update t_user set userName='leewen' where userId=1003-->
   <update id="update" parameterType="com.example.mysqldemo1.model.UserDomain">
-    UPDATE <include refid="BASE_TABLE"/> SET userName=#{userName} , password=#{password} , phone = #{phone} WHERE userId=#{userId}
+        UPDATE <include refid="BASE_TABLE"/> SET userName=#{userName} , password=#{password} , phone = #{phone} WHERE userId=#{userId}
   </update>
 
   <!-- 删除 user -->

@@ -26,7 +26,7 @@ public class UserController {
     }
 
     @ResponseBody
-    @RequestMapping("/update")
+    @RequestMapping(value = "/update")
     public int updateUser(UserDomain user) {
         return userService.updateUser(user);
     }
