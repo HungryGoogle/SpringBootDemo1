@@ -26,6 +26,24 @@ public class UserController {
     }
 
     @ResponseBody
+    @RequestMapping("/update")
+    public int updateUser(UserDomain user) {
+        return userService.updateUser(user);
+    }
+
+    @ResponseBody
+    @RequestMapping("/delete")
+    public Object deleteUserById(int userId) {
+        return userService.deleteUser(userId);
+    }
+
+    @ResponseBody
+    @RequestMapping("/find")
+    public Object updateUser(int userId) {
+        return userService.findUserByUserId(userId);
+    }
+
+    @ResponseBody
     @RequestMapping("/all")
 //    @GetMapping("/all")
     public Object findAllUser(

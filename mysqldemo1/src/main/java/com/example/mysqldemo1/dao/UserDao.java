@@ -9,4 +9,8 @@ public interface UserDao {
     int insert(UserDomain record);
 
     List<UserDomain> selectUsers();
+
+    UserDomain selectUser(int userId);
+    int update(UserDomain record);
+    int delete(int userId);
 }

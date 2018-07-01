@@ -9,6 +9,7 @@
     userId,userName,password,phone
   </sql>
 
+  <!-- 插入user -->
   <insert id="insert" parameterType="com.example.mysqldemo1.model.UserDomain">
     INSERT INTO
       <include refid="BASE_TABLE"/>
@@ -26,6 +27,23 @@
     </trim>
   </insert>
 
+  <!-- 更新user -->
+  <!--update t_user set userName='leewen' where userId=1003-->
+  <update id="update" parameterType="com.example.mysqldemo1.model.UserDomain">
+    UPDATE <include refid="BASE_TABLE"/> SET userName=#{userName} , password=#{password} , phone = #{phone} WHERE userId=#{userId}
+  </update>
+
+  <!-- 删除 user -->
+  <delete id="delete" parameterType="int">
+        DELETE FROM <include refid="BASE_TABLE"/> WHERE userId=#{0}
+  </delete>
+
+  <!-- find user -->
+  <select id="selectUser" parameterType="int" resultType="com.example.mysqldemo1.model.UserDomain">
+        SELECT <include refid="BASE_COLUMN"/> FROM <include refid="BASE_TABLE"/> WHERE userId=#{0}
+  </select>
+
+  <!-- 查询所有 user -->
   <select id="selectUsers" resultType="com.example.mysqldemo1.model.UserDomain">
       SELECT
         <include refid="BASE_COLUMN"/>
